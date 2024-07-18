@@ -28,7 +28,7 @@ jobs:
         uses: JamesIves/github-pages-action@releases/v2
         # uses: peaceiris/actions-gh-pages@v4
         with:
-          ACCESS_TOKEN: ${{ secrets.AUTH_SECRET }}
-          BASED_BRANCH: main
-          BRANCH: prod
-          FOLDER: dist/browser
+          INPUT_ACCESS_TOKEN: ${{ secrets.AUTH_SECRET }}
+          INPUT_BASED_BRANCH: main
+          INPUT_BRANCH: prod
+          INPUT_FOLDER: dist/browser
