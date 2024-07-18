@@ -27,5 +27,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.ANGULAR_AUTH_SECRET }}
+          github_token: ${{ secrets.AUTH_SECRET }}
           publish_dir: cic/dist/browser  # Adjust the directory to your build output
