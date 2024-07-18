@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger the workflow on pushes to the main branch
+      - main # Trigger the workflow on pushes to the main branch
 
 jobs:
   build-and-deploy:
@@ -11,21 +11,24 @@ jobs:
 
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Use the version of Node.js specified in your project
+          node-version: "20" # Use the version of Node.js specified in your project
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the project
-        run: npm run prod-build  # Adjust the build command as necessary
+        run: npm run prod-build # Adjust the build command as necessary
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        use: JamesIves/github-pages-action@releases/v2
+        # uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.AUTH_SECRET }}
-          publish_dir: cic/dist/browser  # Adjust the directory to your build output
+          BASED_BRANCH: main
+          BRANCH: prod
+          FOLDER: dist/browser
