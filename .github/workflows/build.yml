@@ -25,7 +25,7 @@ jobs:
         run: npm run prod-build # Adjust the build command as necessary
 
       - name: Deploy to GitHub Pages
-        use: JamesIves/github-pages-action@releases/v2
+        uses: JamesIves/github-pages-action@releases/v2
         # uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.AUTH_SECRET }}
