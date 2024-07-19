@@ -123,7 +123,8 @@
 }
 .slider-area.slider-two .carousel .carousel-inner .carousel-item {
   width: 100%;
-  height: 95%;
+  margin-top: 35px;
+  height: 85%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -822,7 +823,7 @@
 /*===== latest-news-area =====*/
 .latest-news-area {
   background: var(--white);
-  padding: 100px 0;
+  padding: 60px 0 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .latest-news-area {
@@ -854,7 +855,6 @@
 
 /*===== BLOG STYLE TWO =====*/
 .blog-style-two {
-  margin-top: 50px;
   box-shadow: 0px 0px 30px var(--gray-4);
   border-radius: 8px;
   overflow: hidden;

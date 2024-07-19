@@ -60,13 +60,13 @@
 }
 
 .navbar-area.navbar-three .navbar .navbar-brand {
-margin: 0;
-background-color:var(--primary-light);
-border-radius: 5px;
+  margin: 15px;
+  background-color: var(--white);
+  border-radius: 5px;
 }
 
 .navbar-area.navbar-three .navbar .navbar-brand:hover {
-background-color:var(--primary);
+  background-color: var(--primary);
 }
 .navbar-area.navbar-three .navbar .navbar-toggler .toggler-icon {
   width: 30px;
