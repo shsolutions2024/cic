@@ -544,14 +544,13 @@
     padding: 60px 0;
   }
 }
-.call-action:before {
+.call-action img {
   position: absolute;
   content: "";
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("/assets/images/overlay.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

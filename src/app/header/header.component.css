@@ -63,10 +63,12 @@
   margin: 15px;
   background-color: var(--white);
   border-radius: 5px;
+  clip-path: circle(90% at 100px 50px);
+  transition: all 0.3s ease;
 }
 
 .navbar-area.navbar-three .navbar .navbar-brand:hover {
-  background-color: var(--primary);
+  clip-path: circle(100%);
 }
 .navbar-area.navbar-three .navbar .navbar-toggler .toggler-icon {
   width: 30px;
