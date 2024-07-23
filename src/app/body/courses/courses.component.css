@@ -1,0 +1,545 @@
+/*============================
+  Section Title Six CSS
+==============================*/
+.section-title-six {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  padding-top: 60px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-six {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-six {
+    margin-bottom: 35px;
+  }
+}
+.section-title-six h3 {
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primary);
+  text-transform: capitalize;
+  position: relative;
+  line-height: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-six h3 {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-six h3 {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+}
+.section-title-six h3::before {
+  position: absolute;
+  content: "";
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 15px;
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+.section-title-six h3::after {
+  position: absolute;
+  content: "";
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 15px;
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+.section-title-six h2 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title-six h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-title-six h2 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+.section-title-six p {
+  color: var(--dark-3);
+}
+
+/*# sourceMappingURL=section-title-06.css.map */
+
+/* ===== Buttons Css ===== */
+.card-style-two .card-content .card-btn .primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.card-style-two .card-content .card-btn .active.primary-btn,
+.card-style-two .card-content .card-btn .primary-btn:hover,
+.card-style-two .card-content .card-btn .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.card-style-two .card-content .card-btn .deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.card-style-two {
+  box-shadow: var(--shadow-1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 100px 0 100px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.card-style-two:hover {
+  box-shadow: var(--shadow-4);
+}
+.card-style-two .card-image img {
+  width: 100%;
+  height: 100%;
+}
+.card-style-two .card-content {
+  padding: 16px;
+  line-height: 1.8;
+  text-align: center;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .card-style-two .card-content {
+    padding: 14px;
+    padding-left: 5px;
+  }
+}
+.card-style-two .card-content .card-title {
+  margin-bottom: 0;
+}
+.card-style-two .card-content .card-title a {
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.card-style-two .card-content .card-title a:hover {
+  color: var(--primary);
+}
+.card-style-two .card-content .text {
+  color: var(--dark-3);
+  margin-top: 24px;
+}
+.card-style-two .card-content .card-btn {
+  margin-top: 24px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .card-style-two .card-content .card-btn {
+    margin-top: 16px;
+  }
+}
+
+/*===========================
+  card-01 css
+===========================*/
+.single-card {
+  box-shadow: var(--shadow-1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single-card:hover {
+  box-shadow: var(--shadow-4);
+}
+.single-card .card-image img {
+  width: 100%;
+  height: 100%;
+}
+.single-card .card-content {
+  padding: 16px;
+}
+.single-card .card-content .card-title {
+  margin-bottom: 0;
+}
+.single-card .card-content .card-title a {
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single-card .card-content .card-title a:hover {
+  color: var(--primary);
+}
+.single-card .card-content .text {
+  color: var(--dark-3);
+  margin-top: 8px;
+}
+
+/*===========================
+  tabs AND ACCORDIONS css 
+===========================*/
+.tabs-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .tabs-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+/* tabs-one */
+.tabs-one {
+  border: 1px solid var(--gray-4);
+}
+.tabs-one .nav {
+  border-bottom: 1px solid var(--gray-4);
+}
+@media (max-width: 767px) {
+  .tabs-one .nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-one .nav {
+    display: flex;
+  }
+}
+.tabs-one .nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+}
+.tabs-one .nav .nav-item a.active {
+  color: var(--white);
+  background: var(--primary);
+}
+.tabs-one .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-one .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-two */
+.tabs-two {
+  border: 1px solid var(--gray-4);
+}
+@media (max-width: 767px) {
+  .tabs-two .nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-two .nav {
+    display: flex;
+  }
+}
+.tabs-two .nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  border-bottom: 1px solid var(--gray-4);
+  position: relative;
+}
+.tabs-two .nav .nav-item a.active {
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--gray-4);
+  border-bottom: 0;
+  border-top: 0;
+}
+@media (max-width: 767px) {
+  .tabs-two .nav .nav-item a.active {
+    border: 1px solid var(--gray-4);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-two .nav .nav-item a.active {
+    border: 1px solid var(--gray-4);
+    border-bottom: 0;
+    border-top: 0;
+  }
+}
+.tabs-two .nav .nav-item a.active::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  background: var(--primary);
+}
+.tabs-two .nav .nav-item:first-child a.active {
+  border-left: 0;
+}
+.tabs-two .nav .nav-item:last-child a.active {
+  border-right: 0;
+}
+.tabs-two .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-two .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-three */
+@media (max-width: 767px) {
+  .tabs-three .nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-three .nav {
+    display: flex;
+  }
+}
+.tabs-three .nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  position: relative;
+}
+.tabs-three .nav .nav-item a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.tabs-three .nav .nav-item a::before {
+  position: absolute;
+  content: "";
+  background-color: var(--gray-4);
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+}
+.tabs-three .nav .nav-item a.active {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+.tabs-three .nav .nav-item a.active::before {
+  background: var(--primary);
+}
+.tabs-three .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-three .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-four */
+@media (max-width: 767px) {
+  .tabs-four .nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-four .nav {
+    display: flex;
+  }
+}
+.tabs-four .nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .tabs-four .nav .nav-item a {
+    margin-top: -4px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-four .nav .nav-item a {
+    margin-top: 0;
+  }
+}
+.tabs-four .nav .nav-item a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.tabs-four .nav .nav-item a::before {
+  position: absolute;
+  content: "";
+  background-color: var(--gray-4);
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+}
+.tabs-four .nav .nav-item a.active {
+  color: var(--white);
+  background: var(--primary);
+}
+.tabs-four .nav .nav-item a.active::before {
+  background: var(--primary);
+}
+.tabs-four .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-four .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-five */
+.tabs-five {
+  box-shadow: var(--shadow-4);
+  border-radius: 4px;
+}
+.tabs-five .nav {
+  height: 100%;
+}
+.tabs-five .nav a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+}
+.tabs-five .nav a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.tabs-five .nav a.active {
+  color: var(--white);
+  background: var(--primary);
+}
+.tabs-five .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-five .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/* tabs-six */
+.tabs-six {
+  border: 1px solid var(--gray-4);
+}
+.tabs-six .nav {
+  height: 100%;
+  position: relative;
+}
+.tabs-six .nav::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: var(--gray-4);
+  top: 0;
+  right: 0;
+}
+.tabs-six .nav a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.tabs-six .nav a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.tabs-six .nav a.active {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+.tabs-six .nav a.active::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: var(--primary);
+  top: 0;
+  right: 0;
+}
+.tabs-six .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-six .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+/*# sourceMappingURL=tabs.css.map */

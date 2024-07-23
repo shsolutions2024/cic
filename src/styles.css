@@ -2,14 +2,95 @@
 @import url(../public/assets/css/bootstrap.min.css);
 @import url(../public/assets/css/lineicons.css);
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../public/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../public/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../public/assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"); */
 /*===========================
   COMMON css 
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #1A87AB;
-  --primary-dark: #1AA4D2;
+  --primary: #1a87ab;
+  --primary-shadow: #1a87ab 1px 1px, #1a87ab 2px 2px, #1a87ab 3px 3px,
+    #1a87ac 4px 4px, #1a87ac 5px 5px, #1a87ac 6px 6px, #1a87ac 7px 7px,
+    #1a87ad 8px 8px, #1a88ad 9px 9px, #1a88ad 10px 10px, #1a88ad 11px 11px,
+    #1a88ae 12px 12px, #1a88ae 13px 13px, #1a88ae 14px 14px, #1a88ae 15px 15px,
+    #1a88af 16px 16px, #1a89af 17px 17px, #1a89af 18px 18px, #1a89af 19px 19px,
+    #1a89b0 20px 20px, #1a89b0 21px 21px, #1a89b0 22px 22px, #1a89b0 23px 23px,
+    #1a89b1 24px 24px, #1a90b1 25px 25px, #1a90b1 26px 26px, #1a90b1 27px 27px,
+    #1a90b2 28px 28px, #1a90b2 29px 29px, #1a90b2 30px 30px, #1a90b2 31px 31px,
+    #1a90b3 32px 32px, #1a91b3 33px 33px, #1a91b3 34px 34px, #1a91b3 35px 35px,
+    #1a91b4 36px 36px, #1a91b4 37px 37px, #1a91b4 38px 38px, #1a91b4 39px 39px,
+    #1a92b5 40px 40px, #1a92b5 41px 41px, #1a92b5 42px 42px, #1a92b5 43px 43px,
+    #1a92b5 44px 44px, #1a92b5 45px 45px, #1a92b5 46px 46px, #1a92b5 47px 47px,
+    #1a93b6 48px 48px, #1a93b6 49px 49px, #1a93b6 50px 50px, #1a93b7 51px 51px,
+    #1a93b7 52px 52px, #1a93b7 53px 53px, #1a93b7 54px 54px, #1a94b8 55px 55px,
+    #1a94b8 56px 56px, #1a94b8 57px 57px, #1a94b8 58px 58px, #1a94b9 59px 59px,
+    #1a95b9 60px 60px, #1a95b9 61px 61px, #1a95b9 62px 62px, #1a95ba 63px 63px,
+    #1a95ba 64px 64px, #1a94ba 65px 65px, #1a95ba 66px 66px, #1a95bb 67px 67px,
+    #1a96bb 68px 68px, #1a96bb 69px 69px, #1a96bb 70px 70px, #1a96bc 71px 71px,
+    #1a96bc 72px 72px, #1a96bc 73px 73px, #1a96bc 74px 74px, #1a96bd 75px 75px,
+    #1a97bd 76px 76px, #1a97bd 77px 77px, #1a97bd 78px 78px, #1a97be 79px 79px,
+    #1a97be 80px 80px, #1a97be 81px 81px, #1a97be 82px 82px, #1a88bd 83px 83px,
+    #1a95bf 84px 84px, #1a95be 85px 85px, #1a95be 86px 86px, #1a88bd 87px 87px,
+    #1a95b0 88px 88px, #1a95b0 89px 89px, #1a95b0 90px 90px, #1a88bd 91px 91px,
+    #1a88bd 92px 92px, #1a88bd 93px 93px, #1a88bd 94px 94px, #1a88bd 95px 95px,
+    #1a88bd 96px 96px, #1a88bd 97px 97px, #1a88bd 98px 98px, #1a88bd 99px 99px,
+    #1a88bd 100px 100px, #1a88bd 101px 101px, #1a88bd 102px 102px,
+    #1a88bd 103px 103px, #1a88bd 104px 104px, #1a88bd 105px 105px,
+    #1a88bd 106px 106px, #1a88bd 107px 107px, #1a88bd 108px 108px,
+    #1a88bd 109px 109px, #1a88bd 110px 110px, #1a88bd 111px 111px,
+    #1a88bd 112px 112px, #1a88bd 113px 113px, #1a88bd 114px 114px,
+    #1a88bd 115px 115px, #1a88bd 116px 116px, #1a88bd 117px 117px,
+    #1a88bd 118px 118px, #1a88bd 119px 119px, #1a88bd 120px 120px,
+    #1a88bd 121px 121px, #1a88bd 122px 122px, #1a88bd 123px 123px,
+    #1a88bd 124px 124px, #1a88bd 125px 125px, #1a88bd 126px 126px,
+    #1a88bd 127px 127px, #1a88bd 128px 128px, #1a88bd 129px 129px,
+    #1a88bd 130px 130px, #1a88bd 131px 131px, #1a88bd 132px 132px,
+    #1a88bd 133px 133px, #1a88bd 134px 134px, #1a88bd 135px 135px,
+    #1a88bd 136px 136px, #1a88bd 137px 137px, #1a88bd 138px 138px,
+    #1a88bd 139px 139px, #1a88bd 140px 140px, #1a88bd 141px 141px,
+    #1a88bd 142px 142px, #1a88bd 143px 143px, #1a88bd 144px 144px,
+    #1a88bd 145px 145px, #1a88bd 146px 146px, #1a88bd 147px 147px,
+    #1a88bd 148px 148px, #1a88bd 149px 149px, #1a88bd 150px 150px,
+    #1a88bd 151px 151px, #1a88bd 152px 152px, #1a88bd 153px 153px,
+    #1a88bd 154px 154px, #1a88bd 155px 155px, #1a88bd 156px 156px,
+    #1a88bd 157px 157px, #1a88bd 158px 158px, #1a88bd 159px 159px,
+    #1a88bd 160px 160px, #1a88bd 161px 161px, #1a88bd 162px 162px,
+    #1a88bd 163px 163px, #1a88bd 164px 164px, #1a88bd 165px 165px,
+    #1a88bd 166px 166px, #1a88bd 167px 167px, #1a88bd 168px 168px,
+    #1a88bd 169px 169px, #1a88bd 170px 170px, #1a88bd 171px 171px,
+    #1a88bd 172px 172px, #1a88bd 173px 173px, #1a88bd 174px 174px,
+    #1a88bd 175px 175px, #1a88bd 176px 176px, #1a88bd 177px 177px,
+    #1a88bd 178px 178px, #1a88bd 179px 179px, #1a88bd 180px 180px,
+    #1a88bd 181px 181px, #1a88bd 182px 182px, #1a88bd 183px 183px,
+    #1a88bd 184px 184px, #1a88bd 185px 185px, #1a88bd 186px 186px,
+    #1a88bd 187px 187px, #1a88bd 188px 188px, #1a88bd 189px 189px,
+    #1a88bd 190px 190px, #1a88bd 191px 191px, #1a88bd 192px 192px,
+    #1a88bd 193px 193px, #1a88bd 194px 194px, #1a88bd 195px 195px,
+    #1a88bd 196px 196px, #1a88bd 197px 197px, #1a88bd 198px 198px,
+    #1a88bd 199px 199px, #1a88bd 200px 200px;
+
+  --primary-dark: #1aa4d2;
   --primary-light: #e2f1ff;
   --accent: #00d4d7;
   --accent-dark: #00bac1;
