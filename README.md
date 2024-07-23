@@ -1,4 +1,6 @@
-# Cic
+[![Deploy to GitHub Pages](https://github.com/shsolutions2024/cic/actions/workflows/build.yml/badge.svg)](https://github.com/shsolutions2024/cic/actions/workflows/build.yml)
+
+# Comboni Italian Center
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
